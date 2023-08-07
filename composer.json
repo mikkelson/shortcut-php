@@ -2,7 +2,7 @@
     "name": "mikkelson/shortcut-php",
     "description": "Lightweight (dependency-free) php wrapper for Shortcut.com V3 REST API",
     "homepage": "https://github.com/mikkelson/shortcut-php",
-    "keywords": ["shortcut" "clubhouse", "api", "php", "rest"],
+    "keywords": ["shortcut", "clubhouse", "api", "php", "rest"],
     "license": "MIT",
     "authors": [
         {
