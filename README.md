@@ -351,17 +351,20 @@ $shortcut->delete('story-links', $storylink_id);
 
 ### Search 
 
+> **Warning**
+> Searching has changed in V3, and this library has not yet been fully updated, below is a hacky way you can search using this repo. 
+
+
 Search Stories lets you search Stories based on desired parameters. While all parameters are optional, you must include at least one parameter in order to receive a response.
 
-See [complete list of available search parameters](https://shortcut.com/api/v3/#search-stories)
+See [complete list of available search parameters](https://developer.shortcut.com/api/rest/v3#Search-1273)
 
+To search, for example, for all stories with a specific workflow state:
 ```php
-$params = [
-    'archived' => true,
-    'text' => 'code refactoring' //Full text search on Story names, comments, and descriptions.
-];
+$query = "state:500005001";
 
-$stories = $shortcut->create('stories/search', $params);
+$stories = $shortcut->get('search/stories?query='.$query);
+
 ```
 
 ### Create
